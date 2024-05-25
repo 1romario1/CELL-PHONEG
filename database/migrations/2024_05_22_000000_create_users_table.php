@@ -21,7 +21,7 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('Contraseña');
             $table->integer('Numero_Telefono')->unique();
-            $table->string('Direccion')->nullable();
+            $table->string('Direccion');
             $table->foreignID('Id_Rol');
             $table->foreign('Id_Rol')->references('Id_Rol')->on('rol');
             $table->string('Estado',length:20);

@@ -24,11 +24,10 @@ return new class extends Migration
             $table->string('Detalles_Producto');
             $table->string('Estado');
             $table->float('Total');
-            $table->timestamps('Fecha_Emision');
+            $table->timestamps();
             $table->foreign('Numero_Documento')->references('Numero_Documento')->on('users');
             $table->foreign('Numero_Telefono_CLiente')->references('Numero_Telefono')->on('users');
             $table->foreign('Correo_Electronico')->references('Correo_Electronico')->on('users');
-            $table->foreign('Direccion')->references('Direccion')->on('users');
             $table->foreign('Id_Metodo_Pago')->references('Id_Metodo_pago')->on('metodo_pago');
             $table->foreign('Id_Producto')->references('Id_Producto')->on('productos');                        
         });

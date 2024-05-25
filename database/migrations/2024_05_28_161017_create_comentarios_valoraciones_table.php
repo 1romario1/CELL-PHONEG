@@ -13,13 +13,15 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('favoritos', function (Blueprint $table) {
-            $table->id('Id_Favorito');
+        Schema::create('comentarios_valoraciones', function (Blueprint $table) {
+            $table->id('Id_Comentario');
             $table->foreignId('Numero_Documento');
             $table->foreignId('Id_Producto');
-            $table->timestamps('Fecha');
+            $table->string('Comentario_Usuario');
+            $table->integer('Valoracion');
+            $table->timestamps();
             $table->foreign('Numero_Documento')->references('Numero_Documento')->on('users');
-            $table->foreign('Id_Producto')->references('Id_Producto')->on('productos');
+            $table->foreign('Id_Producto')->references('Id_Producto')->on('Productos');
         });
     }
 
@@ -30,6 +32,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('favoritos');
+        Schema::dropIfExists('_comentarios_valoraciones');
     }
 };

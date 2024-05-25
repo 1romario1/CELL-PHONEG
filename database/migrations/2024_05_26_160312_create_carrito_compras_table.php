@@ -13,13 +13,15 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('inventario', function (Blueprint $table) {
-            $table->id('Id_Inventario');
+        Schema::create('carrito_compras', function (Blueprint $table) {
+            $table->id('Id_Carrito');
+            $table->foreignId('Numero_Documento');
             $table->foreignId('Id_Producto');
-            $table->string('Nombre_Producto');
-            $table->integer('Cantidad_Stock');
-            $table->timestamps('Fecha_Actualizacion');
+            $table->integer('Cantidad');
+            $table->time('Fecha_Creacion'); 
+            $table->foreign('Numero_Documento')->references('Numero_Documento')->on('users');
             $table->foreign('Id_Producto')->references('Id_Producto')->on('productos');
+            $table->time('Fecha_Actualizacion');
         });
     }
 
@@ -30,6 +32,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('_inventario');
+        Schema::dropIfExists('_carrito_compras');
     }
 };
