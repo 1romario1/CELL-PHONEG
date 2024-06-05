@@ -9,16 +9,22 @@
     <meta name="description" content="La pagina ideal para buscar articulos para celulares,celulares de todas las gamas(baja,media,alta)">
     <title>CellphoneG</title>
     <link rel="icon" href="{{asset('img/telefono-inteligente.png')}}">
+    <link rel="stylesheet" href="{{asset('css/estilo.css')}}">
 </head>
 <header>
-    <h2>CellphoneG</h2>
-    <nav>
+    <section class="contenidoA">
+        <article>
+            <h2>CellphoneG</h2>
+            <nav>
         
-        <ul>
-            <li><a href="">ho</a></li>
-            <li><a href="">hi</a></li>
-        </ul>
-    </nav>
+            <ul>
+                <li><a href="">ho</a></li>
+                <li><a href="">hi</a></li>
+             </ul>
+            </nav>
+        </article>
+    </section>
+    
 </header>
 <body>
     <section>
