@@ -1,7 +1,13 @@
 .contenidoA{
     background-color: #85929E;
-    border: 5px solid #AEB6BF;
+    border: 5px solid #54CA84;
     border-radius: 8px;
+    margin:-10px;
+    margin-bottom: -15px;
+}
+
+.ContenidoB,nav{
+    display: flex;
 }
 body{
     background-color: #E5E7E9;

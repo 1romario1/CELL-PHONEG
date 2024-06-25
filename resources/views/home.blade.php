@@ -15,16 +15,16 @@
     <section class="contenidoA">
         <article>
             <h2>CellphoneG</h2>
-            <nav>
-        
-            <ul>
-                <li><a href="">ho</a></li>
-                <li><a href="">hi</a></li>
-             </ul>
+            <nav class="contenidoB">
+                <ul>
+                    <li><a href="">Registrate</a></li>
+                    <li><a href="">Inicia sesion</a></li>
+                    <li><a href="">Servicios que ofrecemos</a></li>
+                    <li><a href="">Contactos</a></li>
+                </ul>
             </nav>
         </article>
-    </section>
-    
+    </section>   
 </header>
 <body>
     <section>
